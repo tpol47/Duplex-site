@@ -1,0 +1,51 @@
+:root {
+    --green: #3C422B;
+    --beige: #CFA176;
+}
+
+html, body, main {
+    margin: 0;
+    height: 100%;
+}
+
+.duplex-section {
+    height: 50%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.duplex-image {
+    position: relative;
+    height: 100%;
+}
+
+.duplex-logo {
+    width: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.bookmark-us {
+    float: right;
+    padding: 20px
+}
+
+.coming-soon-section {
+    background-color: var(--green);
+    height: 50%
+}
+
+.coming-soon-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.coming-soon-text {
+    width: 60%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
