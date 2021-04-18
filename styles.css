@@ -10,8 +10,6 @@ html, body, main {
 
 .duplex-section {
     height: 50%;
-    margin: auto;
-    vertical-align: middle;
 }
 
 .duplex-image {
@@ -39,13 +37,26 @@ html, body, main {
 
 .coming-soon-wrapper {
     position: relative;
-    height: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
 }
 
-.coming-soon-text {
-    width: 60%;
-    overflow: auto;
-    margin: auto;
+.footer {
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+}
+
+.career-inquiries {
+    margin: 10px
+}
+
+.address {
+    margin: 10px
 }
