@@ -18,7 +18,7 @@ html, body, main {
 }
 
 .duplex-logo {
-    width: 60%;
+    width: 40%;
     overflow: auto;
     margin: auto;
     position: absolute;
@@ -27,7 +27,10 @@ html, body, main {
 
 .bookmark-us {
     float: right;
-    padding: 20px
+    margin: 20px;
+    padding-top: 10px; padding-bottom: 10px;
+    padding-right: 15px; padding-left: 15px;
+    border: 2px solid var(--beige)
 }
 
 .coming-soon-section {
@@ -42,21 +45,36 @@ html, body, main {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-style: italic;
+    font-size: calc(40px + 2rem);
+    opacity: 90%;
+    color: white;
 }
 
 .footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
-    margin: 10px
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
 .career-inquiries {
-    margin: 10px
+    padding: 10px
 }
 
 .address {
-    margin: 10px
+    padding: 10px
+}
+
+.line{
+    position: fixed;
+    width: 100%;
+    top: 57%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 200px
 }
