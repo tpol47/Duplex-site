@@ -1,6 +1,6 @@
 :root {
-    --green: #3C422B;
-    --beige: #CFA176;
+    /* --green: #3C422B; */
+    --beige: #b3aaa2;
 }
 
 html, body, main {
@@ -10,7 +10,7 @@ html, body, main {
 
 @media screen and (max-width: 600px) {
     .main {
-        background-color: var(--green);
+        background-color: black;
     }
 }
 
@@ -105,7 +105,7 @@ html, body, main {
 }
 
 .coming-soon-section {
-    background-color: var(--green);
+    background-color: black;
     height: 50%
 }
 
@@ -209,7 +209,7 @@ html, body, main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--green);
+        background-color: black;
         color: white;
     }
 }
