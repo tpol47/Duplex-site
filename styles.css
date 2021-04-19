@@ -13,10 +13,16 @@ html, body, main {
 }
 @media screen and (max-width: 600px) {
     .duplex-section {
-        height: 300px
+        height: 300px;
+        background-color: white;
     }
 }
 
+@media screen and (max-width: 600px) {
+    main {
+        background-color: var(--green);
+    }
+}
 
 
 @media screen and (min-width: 600px) {
@@ -102,7 +108,7 @@ html, body, main {
 
 @media screen and (max-width: 600px) {
     .coming-soon-section {
-        height: 500px
+        height: 100%
     }
 }
 
