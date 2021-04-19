@@ -85,6 +85,9 @@ html, body, main {
         background-color: inherit;
         font-size: 16px
     }
+    .bookmark-us:hover{
+        background-color: var(--beige);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -98,7 +101,6 @@ html, body, main {
         font-family: "Alegreya Sans";
         font-size: 20px;
         text-align: center;
-        cursor: pointer;
     }
 }
 
@@ -122,7 +124,7 @@ html, body, main {
         transform: translateY(-50%);
         text-align: center;
         font-family: 'Cormorant', serif;
-        letter-spacing: 7px;
+        letter-spacing: 8px;
         font-weight: 300;
         font-style: italic;
         font-size: calc(50px + 3rem);
@@ -141,7 +143,7 @@ html, body, main {
         transform: translateY(-50%);
         text-align: center;
         font-family: 'Cormorant', serif;
-        letter-spacing: 7px;
+        letter-spacing: 8px;
         font-weight: 100;
         font-style: italic;
         font-size: calc(50px + 3rem);
@@ -243,5 +245,13 @@ html, body, main {
         padding-bottom: 70px;
         text-align: center;
     }
+}
+
+
+@media screen and (min-width: 600px) {
+    .arrow {
+        display: false
+    }
+    
 }
 
