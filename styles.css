@@ -213,8 +213,8 @@ html, body, main {
     
     .address {
         padding: 10px;
-        padding-left: 20px;
-        padding-right: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
         font-family: "Alegreya Sans";
     }
 }

@@ -1,5 +1,5 @@
 $(function() {
-    $('#bookmarkme').click(function (e) {
+    $('#bookmark').click(function (e) {
         var bookmarkTitle = document.title;
         var bookmarkUrl = window.location.href;
     
