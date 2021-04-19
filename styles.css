@@ -38,6 +38,8 @@ html, body, main {
 @media screen and (min-width: 600px) {
     .duplex-logo {
         width: 50%;
+        max-height: 140px;
+        max-width: 580px;
         overflow: auto;
         margin: auto;
         position: absolute;
