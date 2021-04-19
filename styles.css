@@ -13,7 +13,7 @@ html, body, main {
 }
 @media screen and (max-width: 600px) {
     .duplex-section {
-        height: 400px
+        height: 300px
     }
 }
 
@@ -54,7 +54,7 @@ html, body, main {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 150px
+        padding-top: 100px
 
         /* overflow: auto; */
         /* margin: auto; */
@@ -102,7 +102,7 @@ html, body, main {
 
 @media screen and (max-width: 600px) {
     .coming-soon-section {
-        height: 550px
+        height: 500px
     }
 }
 
@@ -127,7 +127,7 @@ html, body, main {
 @media screen and (max-width: 600px) {
     .coming-soon-wrapper {
         position: relative;
-        top: 350px;
+        top: 320px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -154,7 +154,7 @@ html, body, main {
     }
     .line{
         position: absolute;
-        top: 300px;
+        top: 200px;
         width: 100%;
         /* top: 400px; */
         /* -webkit-transform: translateY(-50%);
@@ -205,7 +205,7 @@ html, body, main {
 
 @media screen and (min-width: 600px) {
     .career-inquiries {
-        padding: 10px;
+        padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 10px;
         font-family: "Alegreya Sans";
