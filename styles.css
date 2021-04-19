@@ -133,6 +133,8 @@ html, body, main {
         transform: translateY(-50%);
         text-align: center;
         font-family: "Cormorant";
+        font-weight: 100;
+        font-style: italic;
         font-size: calc(50px + 3rem);
         font-weight: 100;
         opacity: 90%;
