@@ -164,7 +164,7 @@ li:hover {
 @media (max-width: 550px) {
   .menuimg {
     position: absolute;
-    top: 83%;
+    top: 103%;
     width: 45%;
     margin-bottom: 34%;
   }
