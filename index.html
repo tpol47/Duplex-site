@@ -1,62 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Cormorant:ital,wght@1,300&display=swap');
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="description" content="Duplex Website">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Duplex Chicago</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>var ml = { timelines: {}};</script>
-    <script src="bookmark.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title> The Duplex Chicago Website Landing Page </title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- jQuery code to scroll to footer -->
+  <script>
+      $(document).ready(function() {
+          $("contact").click(function() {
+              $(document).scrollTop($(document).height());
+          });
+      });
+  </script>
+
 </head>
-<body class="body">
-    <main class="main">
-        <div class="bookmark-us" id="bookmarkme">Bookmark Us </div>
-        <div class="bookmark-us arrow" id="bookmarkme">Bookmark Us &#8594; </div>
-        <section class="duplex-section">
-            <div class="duplex-image">
-                <img class="duplex-logo ml3" src="./images/duplex-logo.png" />
-            </div>
-        </section>
-        <img class="line line-desktop" src="./images/line-desktop.svg" />
-        <img class="line line-mobile" src="./images/line-mobile.svg" />
 
-        <section class="coming-soon-section">
+<body>
+  <!-- Header Menu (Hamburger, Phone, Reserve) -->
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="menus.html">Menu</a>
+      <a href="#">Reservations</a>
+      <a href="safety.html">Safety</a>
+      <a href="#contact"> Contact </a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
+      <!-- &#9776; -->
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </span>
+    <span class="headerlinks">
+      <span class="call">Call (773) 697-4153</span>
+      <span class="reserve">Reserve</span>
+      <a href="tel:773-697-4153"><span class="callicon">&#9742;</span></a>
+    </span>
+    <script>
+      function myFunction(x) {
+        const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        x.classList.toggle("change");
+        //open
+        if (document.getElementById("bar2").style.opacity !== "0") {
+          if (width > 768){
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          document.getElementById("mySidenav").style.width = "250px";
+          // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          document.getElementById("bar2").style.opacity = 0
+        }
+        //close
+        else {
+          if (document.getElementById("main").style.marginLeft === "250px") {
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          document.getElementById("mySidenav").style.width = "0";
+          // document.body.style.backgroundColor = "white";
+          document.getElementById("bar2").style.opacity = 1
+        }
+      }
+    </script>
+  </header>
 
-            <div class="coming-soon-wrapper ml3">
-                    Coming <br class="break" /> Soon
+  <!-- Landing Page (Logo, Image, About Blurb) -->
+  <div class="main" id="main">
+  <!-- <div class="circle"></div> -->
+    <div class="content-desktop">
+      <div class="landingsection">
+        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+        <div class="landingtext">
+          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+          </h2>
+          <a href="menus.html">explore our menus </a>
+        </div>
+      </div>
+      <img class= "landingimg" src="IMAGES/DuplexLanding.jpg" />
+      <div class="palmoverlay">
+        <img class="palmimg" src="IMAGES/palm.svg" width="630" height="380">
+      </div>
+    </div>
+
+    <div class="content-mobile">
+      <div class="landingsection">
+        <!-- <div class="palmoverlay">
+          <img class="palmimg" src="IMAGES/palm.svg" width="410" height="375">
+        </div> -->
+        <!-- <img class= "landingimg" src="IMAGES/LandingImage1.png" /> -->
+        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+      </div>
+      <div class="landingtextcontainer">
+
+        <div class="landingtext">
+          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+          </h2>
+          <a href="menus.html">explore our menus </a>
+        </div>
+      </div>
+      <!-- <div class="palmoverlay">
+        <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
+      </div> -->
+    </div>
+
+    <!-- Food Section (Food Image + Reserve Table CTA) -->
+
+    <!-- <div class="circle2"></div> -->
+    <div class="foodcontent">
+        <img class="foodimg" src="IMAGES/duplexcocktails.jpg" />
+        <div class="foodtext">
+          <h1> Good vibes and great cocktails. It all adds up. </h1>
+          <a href="#">reserve a table</a>
+        </div>
+    </div>
+
+    <!-- Events Section on Landing -->
+
+    <div class="eventscontent">
+      <img class="barshot" src="IMAGES/eventshots.png">
+      <div class="eventtext">
+        <h1 style="color: #FFFDF5"> Live music and local DJs. It’s all about the community. </h1>
+        <a href="#">upcoming events</a>
+      </div>
+      <div class="palmoverlay2">
+        <img class="palmimg2" src="IMAGES/palm.svg">
+        </div>
+    </div>
+
+    <!-- <div class="circle3"></div> -->
+
+
+            <!-- Photo Collage Section and Hours -->
+
+    <div class="photocontainer">
+      <img src="IMAGES/Duplexgroup.jpg" class="photo1" width="55%" height="55%">
+      <img src="IMAGES/Duplexfoodshot.jpg" class="photo2" width="40%" height="40%">
+      <img src="IMAGES/Duplexbrunch.jpg"  class="photo3" height="78%">
+      <div class="brunchtext">
+        <h1> Join us for bottomless brunches on the weekends</h1>
+          <h2 style="color: #2B2E28"> We've got bottomless mimosas and margaritas. Kick back while the DJ plays your favorite jams. </h2>
+          <p> Saturday and Sunday <br> 10 am to 3 pm</p>
+        </div>
+    </div>
+
+        <!-- Newsletter Sign Up Form -->
+
+    <div class="newslettercontent">
+      <div class="newslettertext">
+        <h1 style="color: #FFFDF5"> Keep up to date with The Duplex </h1>
+        <h2>Sign up below to recieve news and updates from us via our Loyalty Program.</h2>
+        <!-- Begin Mailchimp Signup Form -->
+        <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
+        <style type="text/css">
+        #mc_embed_signup{clear:left; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div class="subscribesection" id="mc_embed_signup">
+          <form action="https://theduplexchicago.us1.list-manage.com/subscribe/post?u=6ac758a42226b9f47e729862b&amp;id=6429f4bc1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="inputcontainer" id="mc_embed_signup_scroll">
+              <input class="emailinput" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6ac758a42226b9f47e729862b_6429f4bc1e" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="Sign Up" id="mc-embedded-subscribe" class="subscribebutton"></div>
             </div>
-            <script>
-                // Wrap every letter in a span
-                $('.ml3').each(function(){
-                  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-                });
-                
-                ml.timelines["ml3"] = anime.timeline({loop: false})
-                  .add({
-                    targets: '.ml3 .letter',
-                    opacity: [0,1],
-                    easing: "easeInOutQuad",
-                    duration: 2250,
-                    delay: function(el, i) {
-                      return 150 * (i+1)
-                    }
-                  });
-                </script>
-        </section>
-        <footer class="footer">
-            <span class="career-inquiries">For career inquiries, please send your resume to: amandacruz@theduplexchicago.com</span>
-            <span class="address">3137 West Logan Blvd, Chicago, IL 60647 </span>
-        </footer>
-    </main>
+          </form>
+        </div>
+
+    <!--End mc_embed_signup-->
+      </div>
+      <div class="social-links">
+          <h2>Follow us on social media</h2>
+          <li><a href="https://www.facebook.com/TheDuplexChicago/?ref=py_c"><i class="fa fa-facebook" aria-hidden="true" style="font-size:40px;"></i></a></li>
+          <li><a href="https://www.instagram.com/theduplexchicago/"><i class="fa fa-instagram" aria-hidden="true" style="font-size:40px;"></i></a></li>
+          <li><a href="tiktoklink"><img src="IMAGES/tiktok.svg"></a></li>
+      </div>
+    </div>
+    <section class="footer" id="contact">
+      <div class="footerinfo">
+        <img src="IMAGES/Duplexlogoblack.png" class="footerlogo" />
+        <div class="footertext">
+          <div class="sitemap footersection">
+            <h1>Sitemap</h1>
+            <a href="menus.html"><p>Menu</p></a>
+            <p>About</p>
+            <p>Reservations</p>
+            <a href="safety.html"><p>Safety</p></a>
+            <p>Contact</p>
+          </div>
+          <div class="locationhours footersection">
+            <h1>Location</h1>
+            <div>3137 W Logan Blvd. Chicago, IL 60647</div>
+            <h1>Hours</h1>
+            <div>Tuesday - Friday 4pm - 2am</div>
+            <div>Saturday - 10am - 2am</div>
+            <div>Sunday - 10am - 10pm</div>
+
+          </div>
+          <div class="contact footersection">
+            <h1>Contact</h1>
+            <div>For general inquiries or career opportunities, contact amandacruz@theduplexchicago.com</div><br>
+            <div>Interested in being a featured chef with us? Reach out to leqoinnerice@theduplexchicago.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="tenantscontainer">
+        <div class="tenants">
+          <h1>Our Tenants</h1>
+          <a href="https://www.thekluckerz.com/"><p>The Kluckerz</p></a>
+          <a href="https://www.limeandradish.com/"><p>Lime and Radish</p></a>
+        </div>
+      </div>
+    </section>
+    <footer class="stickyfooter">
+      Reserve
+    </footer>
+  </div>
 </body>
 </html>
