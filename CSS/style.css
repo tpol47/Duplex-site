@@ -66,10 +66,16 @@ body {
   }
 
   .callicon {
-    font-size: 35px;
+    font-size: 38px;
     cursor: pointer;
   }
 
+}
+
+@media (max-width: 500px) {
+  .headerlinks {
+    padding-top: 4%;
+  }
 }
 
 
@@ -173,17 +179,19 @@ body {
 
 @media (max-width: 768px) and (min-width: 520px) {
   .logowhite {
-    padding-top: 16%;
+    padding-top: 23%;
     width: 90%;
     padding-left: 5%;
+    z-index: 3;
   }
 }
 
 @media (max-width: 520px) {
   .logowhite {
-    padding-top: 16%;
+    padding-top: 28%;
     width: 90%;
     padding-left: 5%;
+    z-index: 3;
   }
 }
 
