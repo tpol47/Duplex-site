@@ -508,7 +508,7 @@ h1 {
 }
 
 .brunchtext p {
-  font-size: 20px;
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -521,7 +521,7 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .photocontainer {
     width: 100%;
     padding: 10% 0% 10% 0%;
@@ -543,19 +543,19 @@ h1 {
 .brunchtext {
   position: absolute;
   width: 35%;
-  padding-top: 66%;
+  padding-top: 68%;
   padding-left: 58%;
   padding-right: 4%;
   text-align: right;
 }
 
 .brunchtext h1 {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .brunchtext h2 {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 
@@ -579,28 +579,6 @@ h1 {
   }
 }
 
-@media (max-width: 425px) {
-  .brunchtext {
-    position: absolute;
-    padding-top: 35%;
-    padding-left: 62%;
-    padding-right: 3%;
-    text-align: right;
-  }
-
-  .brunchtext p {
-    font-size: 16px;
-  }
-
-  .brunchtext h1 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .brunchtext h2 {
-    font-size: 69px;
-  }
-}
 
 .newslettercontent {
     position: relative;
