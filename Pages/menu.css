@@ -64,34 +64,20 @@ body {
 
 }
 
-  .menulogo {
-  position: absolute;
-  padding-left: 1%;
-  width: 20%;
-  top: 30px;
-}
+
 
 .menutext h2 {
   font-size: 18px;
   color: #1F2511;
   padding-bottom: 8%;
-  padding-top: 5%;
-}
-
-@media (min-width: 725px) {
-    .menulogo {
-    position: absolute;
-    padding-left: 1%;
-    width: 16%;
-    top: 10px;
-  }
+  padding-top: 0%;
 }
 
 
 .menucontent {
   display: flex;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 5%;
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
@@ -101,7 +87,7 @@ body {
 .menutext {
   text-align: center;
   width: 50%;
-  padding-top: 10%;
+  padding-top: 15%;
   padding-left: 10%;
   padding-right: 10%;
   z-index: 1;
@@ -123,7 +109,7 @@ body {
 li {
   display: flex;
   margin-left: 2%;
-  margin-top: 4%;
+  margin-top: 3%;
   background: #706C4C;
   box-sizing: border-box;
   padding: 3%;
@@ -136,12 +122,6 @@ li:hover {
   box-sizing: border-box;
   transition: .8s;
   background: #9B9770;
-}
-
-.menuimg {
-  width: 40%;
-  margin-top: 10%;
-  padding-bottom: 10%;
 }
 
 .safetyimg {
@@ -166,6 +146,16 @@ li:hover {
     padding-bottom: 8%;
     padding-top: 0%;
   }
+
+  .menutext {
+    text-align: center;
+    width: 50%;
+    padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+  }
+
 }
 
   .menuimg {
@@ -174,6 +164,13 @@ li:hover {
     padding-bottom: 0%;
   }
 
+@media (max-width: 500px) {
+  .menuimg {
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+}
   .safetyimg {
     width: 40%;
     padding-top: 0%;
