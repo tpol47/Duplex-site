@@ -533,13 +533,14 @@ h1 {
 @media (max-width: 400px) {
   .photocontainer {
     width: 100%;
-    padding: 15% 0% 15% 0%;
+    padding: 15% 0% 18% 0%;
     position: relative;
     display: flex;
   }
   .photo2 {
-    margin-left: 5%;
+    margin-left: 0%;
     padding-top: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -552,19 +553,19 @@ h1 {
 .brunchtext {
   position: absolute;
   width: 35%;
-  padding-top: 69%;
+  padding-top: 68%;
   padding-left: 58%;
   padding-right: 4%;
   text-align: right;
 }
 
 .brunchtext h1 {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 20px;
 }
 
 .brunchtext h2 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
