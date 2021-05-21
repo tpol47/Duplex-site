@@ -152,11 +152,11 @@ body {
 
   .landingtext {
     position: relative;
-    width: 220px;
+    width: auto;
     z-index:1;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-right: 30%;
+    padding-right: 20%;
     padding-left: 10%;
 
     /* height: 500px */
@@ -530,7 +530,7 @@ h1 {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .photocontainer {
     width: 100%;
     padding: 15% 0% 15% 0%;
@@ -568,7 +568,7 @@ h1 {
 }
 
 
-@media (min-width: 1100px) {
+@media (min-width: 768px) {
   .brunchtext h1 {
     font-size: 50px;
     line-height: 60px;
@@ -580,7 +580,7 @@ h1 {
 
   .brunchtext {
     padding-right: 6%;
-    padding-top: 72%;
+    padding-top: 68%;
   }
 
   .brunchtext p {
