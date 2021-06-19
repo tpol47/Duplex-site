@@ -40,10 +40,26 @@ body {
     padding-left: 25px;
   }
 
+  .ordernow {
+    cursor: pointer;
+    margin-left: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: 1px solid #F2B277;
+  }
+
   .reserve:hover {
     background-color: #F2B277;
-    color: black
+    color: white;
   }
+
+  .ordernow:hover {
+    background-color: #F2B277;
+    color: white;
+  }
+
   .callicon {
     display: none;
   }
@@ -58,6 +74,10 @@ body {
   }
 
   .reserve{
+    display: none
+  }
+
+  .ordernow {
     display: none
   }
 
@@ -946,28 +966,41 @@ body {
 
 @media (max-width: 768px) {
   .stickyfooter {
-    width: 100%;
     position: sticky;
-    bottom: 0;
-    background-color: #F2B277;
-    z-index: 4;
-    height: 45px;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 27px;
-    color: white;
-    font-family: Alegreya Sans;
-    font-weight: bold;
-    cursor: pointer;
   }
+.button_style {
+  background-color: #F2B277;
+  z-index: 4;
+  height: 45px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 27px;
+  color: white;
+  font-family: Alegreya Sans;
+  font-weight: bold;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 0.50px;
+  border-color: #B5753A;
+}
 
-  .stickyfooter:hover {
+.button_list {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  z-index: 4;
+}
+
+
+  .button_style:hover {
     background-color: #C28D5C;
   }
 }
 
 @media (min-width: 768px) {
-  .stickyfooter {
+  .button_list {
     display: none;
   }
 }
