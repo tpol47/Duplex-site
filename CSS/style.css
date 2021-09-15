@@ -421,6 +421,7 @@ h1 {
 
 @media (max-width: 900px) and (min-width: 768px) {
  .brunchimg {
+   max-width: 100%;
    padding-top: 0%;
  }
 }
@@ -444,7 +445,7 @@ h1 {
 
 .dplximg {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 
