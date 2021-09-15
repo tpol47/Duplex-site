@@ -367,24 +367,86 @@ h1 {
     /* display: flex; */
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     overflow:auto;
 
     /* padding: 15% 5% 15% 5%; */
   }
 
   .foodimg {
-    width: 45%;
+    width: 48%;
     float: left;
   }
 
   .foodtext {
-    width: 40%;
+    width: 39%;
     float: right;
     padding: 6% 2% 6% 10%;
   }
 }
+
+----
+
+.brunchcontent {
+  width: 90%;
+}
+
+
+
+@media (min-width: 768px) {
+  .brunchcontent {
+    /* display: flex; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    overflow:auto;
+
+    /* padding: 15% 5% 15% 5%; */
+  }
+
+  .brunchimg {
+    width: 30%;
+    float: left;
+  }
+
+  .brunchtext1 {
+    text-align: center;
+    width: 40%;
+    float: right;
+    padding: 6% 2% 5% 5%;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+ .brunchimg {
+   padding-top: 0%;
+ }
+}
+
+@media (max-width: 768px) {
+  .brunchcontent {
+    width: 100%;
+  }
+  .brunchcontent img {
+    width: 100%;
+    height: auto;
+  }
+  .brunchtext1 {
+    text-align: center;
+    width: 70%;
+    padding: 15% 2% 10% 10%;
+    margin: 6% 6% 6% 6%;
+  }
+}
+
+
+.dplximg {
+  display: block;
+  width: 100%;
+}
+
 
 @media (max-width: 900px) and (min-width: 768px) {
  .foodimg {
@@ -613,7 +675,7 @@ h1 {
     text-align: center;
     position: relative;
     background: #706C4C;
-    margin-top: 68%;
+    margin-top: 0%;
     background-image: url("../IMAGES/signupbg.png")
   }
 
