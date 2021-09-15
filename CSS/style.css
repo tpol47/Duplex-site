@@ -1,5 +1,5 @@
 header {
-  height: 265px;
+  height: 195px;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -357,7 +357,7 @@ h1 {
 }
 
 .foodcontent {
-  width: 90%;
+  width: 95%;
 }
 
 
@@ -382,11 +382,10 @@ h1 {
   .foodtext {
     width: 39%;
     float: right;
-    padding: 6% 2% 6% 10%;
+    padding: 6% 2% 6% 5%;
   }
 }
 
-----
 
 .brunchcontent {
   width: 90%;
@@ -464,8 +463,8 @@ h1 {
     height: auto
   }
   .foodtext {
-    width: 70%;
-    padding: 15% 2% 15% 10%;
+    width: 85%;
+    padding: 15% 2% 8% 8%;
   }
 }
 
