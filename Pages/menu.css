@@ -1,9 +1,8 @@
 header {
-  height: 265px;
+  height: 110px;
   position: fixed;
   width: 100%;
-  z-index: 2;
-  background: linear-gradient(180deg, rgba(10, 19, 1, 0.95) 15.5%, rgba(10, 19, 1, 0) 82.98%);
+  background: linear-gradient(180deg, rgba(10, 19, 1, 0.95) 30.5%, rgba(10, 19, 1, 0) 77.98%);
 }
 
 body {

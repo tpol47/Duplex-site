@@ -166,6 +166,16 @@ body {
 
   }
 
+  .safetysection {
+    height: 500px;
+    width: 100%;
+    background-image: url("../IMAGES/djmobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
   .landingimg{
     width: 100%;
     z-index: 1;
@@ -354,6 +364,12 @@ h2 {
 h1 {
   font-family: Josefin Sans;
   font-size: 47px;
+}
+
+h4 {
+  font-family: Josefin Sans;
+  font-size: 32px;
+  line-height: 0;
 }
 
 .foodcontent {
@@ -649,6 +665,43 @@ h1 {
 .brunchtext h2 {
   font-size: 13px;
 }
+
+h3 {
+  font-family: 'Sail', cursive;
+  font-size: 85px;
+  color: white;
+  line-height: 78px;
+}
+
+
+
+/* set arrow positioning */
+.arrow {
+	width: 60px;
+	height: 82px;
+	left: 49%;
+	margin-left: 0px;
+	bottom: 5%;
+  z-index:999;
+}
+/* set arrow styles */
+.arrow path {
+	stroke: #F2B277;
+	stroke-width: 2px;
+	fill: transparent;
+	animation: down 2s infinite;
+}
+/* arrow keyframe animation */
+@keyframes down{
+0% { opacity:0 }
+25% { opacity:1 }
+75% { opacity:0 }
+100% { opacity:0 }
+}
+/* arrow animation delay */
+.arrow path.a1{	animation-delay:-1s; }
+.arrow path.a2{	animation-delay:-.5s; }
+.arrow path.a3{	animation-delay:0s; }
 
 
 @media (min-width: 1100px) {
@@ -1066,4 +1119,21 @@ body {
   .button_list {
     display: none;
   }
+}
+
+/* LATE NIGHT CONTENT */
+
+.latehours {
+  position: relative;
+  background-color: #706C4C;
+  align-items: center;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.latenightphotos {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
 }

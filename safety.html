@@ -2,93 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> The Duplex Chicago Logan Square Safety Guidelines </title>
+  <title> The Duplex Chicago Website Landing Page </title>
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="Pages/menu.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+
+<!-- jQuery code to scroll to footer -->
+<script>
+    $(document).ready(function() {
+        $("contact").click(function() {
+            $(document).scrollTop($(document).height());
+        });
+    });
+</script>
+<!-- TOCK Widget here -->
+<script>
+    !function(t,o,c,k){if(!t.tock){var e=t.tock=function(){e.callMethod?
+    e.callMethod.apply(e,arguments):e.queue.push(arguments)};t._tock||(t._tock=e),
+    e.push=e,e.loaded=!0,e.version='1.0',e.queue=[];var f=o.createElement(c);f.async=!0,
+    f.src=k;var g=o.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g)}}(
+    window,document,'script','https://www.exploretock.com/tock.js');
+
+    tock('init', 'theduplex');
+    </script>
 
 </head>
 
 <body>
-    <!-- Header Menu (Hamburger, Phone, Reserve) -->
-    <header>
-      <div id="mySidenav" class="sidenav">
-        <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
-        <a href="index.html">Home</a>
-        <a href="menus.html">Menu</a>
-        <a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9">Chef Collab</a>
-        <a href="https://www.exploretock.com/theduplex/">Reservations</a>
-        <a href="safety.html">Safety</a>
-        <a href="#contact"> Contact </a>
-      </div>
-      <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
-        <!-- &#9776; -->
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2" id="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </span>
-      <span class="headerlinks">
-        <span class="call">Call (773) 697-4153</span>
-        <a href="https://www.exploretock.com/theduplex/" class="reservelink"><span class="reserve">Reserve</span></a>
-        <a href="tel:773-697-4153"><span class="callicon"><i class="fa fa-phone" aria-hidden="true"></i></span></a>
-      </span>
-      <script>
-        function myFunction(x) {
-          const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-          x.classList.toggle("change");
-          //open
-          if (document.getElementById("bar2").style.opacity !== "0") {
-            if (width > 768){
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-            document.getElementById("mySidenav").style.width = "250px";
-            // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            document.getElementById("bar2").style.opacity = 0
-          }
-          //close
-          else {
-            if (document.getElementById("main").style.marginLeft === "250px") {
-              document.getElementById("main").style.marginLeft= "0";
-            }
-            document.getElementById("mySidenav").style.width = "0";
-            // document.body.style.backgroundColor = "white";
-            document.getElementById("bar2").style.opacity = 1
-          }
+<!-- Header Menu (Hamburger, Phone, Reserve) -->
+<header>
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
+    <a href="index.html">Home</a>
+    <a href="menus.html">Menu</a>
+    <a href="safety.html">Specials</a>
+    <a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9">Chef Collab</a>
+    <a href="https://www.exploretock.com/theduplex/">Reservations</a>
+    <a href="#contact"> Contact </a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
+    <!-- &#9776; -->
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2" id="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </span>
+  <span class="headerlinks">
+    <span class="call">Call (773) 697-4153</span>
+      <a href=""><span class="ordernow">Order Now</span></a><a href="https://www.exploretock.com/theduplex/" class="reservelink"><span class="reserve">Reserve</span></a>
+    <a href="tel:773-697-4153"><span class="callicon"><i class="fa fa-phone" aria-hidden="true"></i></span></a>
+  </span>
+  <script>
+    function myFunction(x) {
+      const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      x.classList.toggle("change");
+      //open
+      if (document.getElementById("bar2").style.opacity !== "0") {
+        if (width > 768){
+          document.getElementById("main").style.marginLeft = "250px";
         }
-      </script>
-    </header>
-  <section>
-        <div class="main" id="main">
-          <body>
-            <section>
-              <div class="menucontent">
-                  <div class="menutext">
-                    <h3>Your safety is our top priority.</h3>
+        document.getElementById("mySidenav").style.width = "250px";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("bar2").style.opacity = 0
+      }
+      //close
+      else {
+        if (document.getElementById("main").style.marginLeft === "250px") {
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        document.getElementById("mySidenav").style.width = "0";
+        // document.body.style.backgroundColor = "white";
+        document.getElementById("bar2").style.opacity = 1
+      }
+    }
+  </script>
+</header>
 
-<h2>Thank you for choosing to dine here with us at The Duplex. To help ensure the safety of our guests and staff during this time we have put in place a new dining standard.</h2>
+    <!-- Landing Page (Logo, Image, About Blurb) -->
+    <div class="main" id="main">
+    <!-- <div class="circle"></div> -->
+      <div class="content-desktop">
+        <div class="landingsection">
+          <div class="landingtext">
+            <h3 class="happyhour">happy hour after dark
+            </h3>
+            <h2> Rotating DJs and live music.<br>
+ From bossanova to hip-hop, we’re bringing you grooves + late night food & drink specials.</h2>
+<svg class="arrow">
+	<path class="a1" d="M0 0 L30 22 L60 0"></path>
+	<path class="a2" d="M0 20 L30 42 L60 20"></path>
+	<path class="a3" d="M0 40 L30 62 L60 40"></path>
+</svg>
+          </div>
+        </div>
+        <img class= "landingimg" src="IMAGES/djpic.jpg" />
+        <div class="palmoverlay">
+          <img class="palmimg" src="IMAGES/palm.svg" width="630" height="380">
+        </div>
+      </div>
 
-<p>After each reservation, we will sanitize the table, chairs and the surrounding area. Similarly, we will do the same for restroom service.</p>
+      <div class="content-mobile">
+        <div class="safetysection">
+        </div>
+        <div class="landingtextcontainer">
+          <div class="landingtext">
+            <h2>Rotating DJs and live music. From bossanova to hip-hop, we’re bringing you grooves + late night food & drink specials.</h2>
+<svg class="arrow">
+  <path class="a1" d="M0 0 L30 22 L60 0"></path>
+  <path class="a2" d="M0 20 L30 42 L60 20"></path>
+  <path class="a3" d="M0 40 L30 62 L60 40"></path>
+</svg>
+          </div>
+        </div>
+        <!-- <div class="palmoverlay">
+          <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
+        </div> -->
+      </div>
 
-<p>Party sizes are limited to 10ppl per table and will have a reservation limit time of 2 hours during the week and 90 minutes on the weekends for brunch. We ask that you respect this window of time as it allows us time to properly clean.</p>
+      <!-- Food Section (Food Image + Reserve Table CTA) -->
 
-<p>Please BYOM (bring your own mask) Everyone must wear a face mask indoors covering their nose and mouth, except while eating and drinking (unless the state removes the mask mandate for public businesses). All staff members will be required to wear a mask.</p>
+      <div class="foodcontent">
+          <div class="foodtext">
+            <h4>Tuesday</h4>
+            <p>$5 House Tequila shots</p>
+            <p>$5 Margaritas</p>
+            <p>$10 Loaded Nachos</p>
+            <h4>Wednesday</h4>
+            <p>GAME NIGHT</p>
+            <p>$5 Fresh Espresso Martini</p>
+            <p>$5 Jameson shots</p>
+            <p>$10 Honeylicious Sandwich</p>
+            <h4>Thursday</h4>
+            <p>30% off service industry workers</p>
+            <p>$15 Smash Burger + fries</p>
+            <p>$5 Old Fashioned</p>
+            <h4>Friday</h4>
+            <p>$25 Bottles of Bubbly</p>
+            <p>$5 Draft beers</p>
+            <p>$3 Fried Chicken or Vegan taco</p>
+            <h4>Saturday</h4>
+            <p>$7 Aperol Spritz</p>
+            <p>$3 Bottled beers</p>
+            <p>$10 Birria Grilled Cheese + fries</p>
+          </div>
+            <img class="foodimg" src="IMAGES/margaritas.jpg">
+      </div>
 
-<p>We have implemented an Order & Pay system which gives our guests complete control on when they order and how often they order from the convenience of their phone.</p>
+      <div class="latehours">
+        <h3>late night specials start at 10 pm </h3>
+        <h2><a href="https://www.instagram.com/nightshift_chi/?hl=en"> Click to view DJ schedule </h2></a><br>
 
-<p>We ask if you're experiencing any symptoms consistent with Covid-19 or if someone has been in contact with someone exposed to Covid-19 please stay at home and enjoy our takeout.</p>
-
-                  </div>
-                  <img src="IMAGES/DuplexSafety.jpg" class="safetyimg">
-              </div>
-            </body>
-          </section>
+      <div class="latenightphotos">
+        <img src="IMAGES/photo1.png"><img src="IMAGES/photo2.png">
+        <img src="IMAGES/photo3.png"><img src="IMAGES/photo4.png">
+        <img src="IMAGES/photo5.png"><img src="IMAGES/photo6.png">
+      </div>
+    </div>
 
 
           <section class="footer" id="contact">
