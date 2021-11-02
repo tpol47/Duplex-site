@@ -18,6 +18,10 @@ body {
   color: white;
 }
 
+.aboutsection {
+  background: #FFFCF0;
+  height: 1000px;
+}
 
 @media (min-width: 768px) {
   .headerlinks {
@@ -99,7 +103,9 @@ body {
   }
 }
 
-
+.content-about {
+  background-color: #706C4C;
+}
 
 @media (min-width: 768px) {
   .content-desktop {
@@ -143,6 +149,8 @@ body {
 
 }
 
+
+
 @media (max-width: 768px) {
   .content-mobile {
     background-color: #706C4C;
@@ -165,6 +173,17 @@ body {
     background-position: center center;
 
   }
+
+  .aboutsection {
+    height: 500px;
+    width: 100%;
+    background-image: url("../IMAGES/QR.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
 
   .safetysection {
     height: 500px;
@@ -377,7 +396,6 @@ h4 {
 }
 
 
-
 @media (min-width: 768px) {
   .foodcontent {
     /* display: flex; */
@@ -400,6 +418,49 @@ h4 {
     float: right;
     padding: 6% 2% 4% 11%;
   }
+}
+
+
+
+.foodcontent2 {
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .foodcontent2 {
+    /* display: flex; */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    margin-right: 3%;
+    overflow:auto;
+  }
+
+  .foodimg2 {
+    width: 45%;
+    float: right;
+  }
+
+  .foodtext2 {
+    width: 36%;
+    float: left;
+    padding: 6% 5% 4% 5%;
+  }
+}
+
+.aboutcontent {
+  background: #FFFCF0;
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -90px;
+}
+
+.aboutext {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 10%;
 }
 
 
@@ -484,6 +545,25 @@ h4 {
   }
 }
 
+@media (max-width: 900px) and (min-width: 768px) {
+ .foodimg2 {
+   padding-top: 5%
+ }
+}
+
+@media (max-width: 768px) {
+  .foodcontent2 {
+    width: 100%;
+  }
+  .foodcontent2 img {
+    width: 100%;
+    height: auto
+  }
+  .foodtext2 {
+    width: 85%;
+    padding: 15% 2% 8% 8%;
+  }
+}
 
 .eventscontent {
   position: relative;
@@ -504,6 +584,7 @@ h4 {
     /* padding: 30px; */
     text-align: center;
     min-width: 230px;
+    z-index: 3;
     /* max-width: 550px; */
   }
 }
@@ -580,7 +661,7 @@ h4 {
     left: 45%;
     mix-blend-mode: color-burn;
     opacity: 0.06;
-    z-index: 2
+    z-index: 0;
   }
 
   .palmimg2 {

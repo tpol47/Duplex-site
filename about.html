@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> The Duplex Chicago Logan Square </title>
+  <meta property="og:image" content="IMAGES/duplexlogoflyer.png"/>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- jQuery code to scroll to footer -->
+  <script>
+      $(document).ready(function() {
+          $("contact").click(function() {
+              $(document).scrollTop($(document).height());
+          });
+      });
+  </script>
+<!-- TOCK Widget here -->
+  <script>
+      !function(t,o,c,k){if(!t.tock){var e=t.tock=function(){e.callMethod?
+      e.callMethod.apply(e,arguments):e.queue.push(arguments)};t._tock||(t._tock=e),
+      e.push=e,e.loaded=!0,e.version='1.0',e.queue=[];var f=o.createElement(c);f.async=!0,
+      f.src=k;var g=o.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g)}}(
+      window,document,'script','https://www.exploretock.com/tock.js');
+
+      tock('init', 'theduplex');
+      </script>
+
+</head>
+
+<body>
+  <!-- Header Menu (Hamburger, Phone, Reserve) -->
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
+      <a href="index.html">Home</a>
+      <a href="menus.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="specials.html">Specials</a>
+      <a href="https://www.exploretock.com/theduplex/">Reservations</a>
+      <a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9">Chef Collab</a>
+      <a href="#contact"> Contact </a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
+      <!-- &#9776; -->
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </span>
+    <span class="headerlinks">
+      <span class="call">Call (773) 697-4153</span>
+        <a href=""><span class="ordernow">Order Now</span></a><a href="https://www.exploretock.com/theduplex/" class="reservelink"><span class="reserve">Reserve</span></a>
+      <a href="tel:773-697-4153"><span class="callicon"><i class="fa fa-phone" aria-hidden="true"></i></span></a>
+    </span>
+    <script>
+      function myFunction(x) {
+        const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        x.classList.toggle("change");
+        //open
+        if (document.getElementById("bar2").style.opacity !== "0") {
+          if (width > 768){
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          document.getElementById("mySidenav").style.width = "250px";
+          // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          document.getElementById("bar2").style.opacity = 0
+        }
+        //close
+        else {
+          if (document.getElementById("main").style.marginLeft === "250px") {
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          document.getElementById("mySidenav").style.width = "0";
+          // document.body.style.backgroundColor = "white";
+          document.getElementById("bar2").style.opacity = 1
+        }
+      }
+    </script>
+  </header>
+
+  <!-- Landing Page (Logo, Image, About Blurb) -->
+  <div class="main" id="main">
+  <!-- <div class="circle"></div> -->
+    <div class="content-desktop">
+      <div class="landingsection">
+        <div class="landingtext">
+          <h1 class="diningexperience" style="color: #FFFCF0"><br>Owner Le'Qoinne Rice debuts a community focused dining experience, with a modern twist.
+          </h1>
+        </div>
+      </div>
+      <img class= "landingimg" src="IMAGES/QR.jpg" />
+      <div class="palmoverlay">
+        <img class="palmimg" src="IMAGES/Palm.svg" width="630" height="380">
+      </div>
+    </div>
+
+    <div class="content-mobile">
+      <div class="aboutsection">
+      </div>
+      <div class="landingtextcontainer">
+        <div class="landingtext">
+          <h1 class="diningexperience" style="color: #FFFCF0; font-size: 28px">Owner Le'Qoinne Rice debuts a community focused dining experience, with a modern twist.
+          </h1>
+        </div>
+      </div>
+      </div>
+      <div class="content-desktop">
+        <div class="aboutext">
+            <h1 style="color: #F2B277"> This is our story. </h1>
+            <h2>Over the last year, there is no doubt that the pandemic has impacted us all. It was a difficult year for small businesses, especially everyone who worked in the service and dining industry. Rather than throwing in the towel; we leaned on the grit and support of the Chicago people to adapt to our new normal and deliver a completely reimagined dining experience called The Duplex. What started as two “ghost” kitchens in downtown Chicago has transformed into a modern community dining space that collaborates with the city’s best up-and-coming chefs.<br><br>
+
+The Duplex partners with new chefs every 6 months. These rotating menu concepts will reflect the diverse flavors of our unique neighborhoods and give new culinary talents a chance to shine in our kitchen. As a Black-owned business, The Duplex serves as an inclusive space to gather, indulge, dance, network and grow together. Through the vision of owner, Le’Qoinne Rice, we strive to bring you an innovative dining experience no matter where you come from. So, pull up a seat at our table because we couldn’t have done this without you, Chicago.</h2>
+
+          </div>
+      </div>
+
+      <div class="content-mobile">
+        <div class="aboutext">
+          <h1 style="color: #F2B277"> This is our story. </h1>
+          <h2 style="font-size: 22px">Over the last year, there is no doubt that the pandemic has impacted us all. It was a difficult year for small businesses, especially everyone who worked in the service and dining industry. Rather than throwing in the towel; we leaned on the grit and support of the Chicago people to adapt to our new normal and deliver a completely reimagined dining experience called The Duplex. What started as two “ghost” kitchens in downtown Chicago has transformed into a modern community dining space that collaborates with the city’s best up-and-coming chefs.<br><br>
+
+The Duplex partners with new chefs every 6 months. These rotating menu concepts will reflect the diverse flavors of our unique neighborhoods and give new culinary talents a chance to shine in our kitchen. As a Black-owned business, The Duplex serves as an inclusive space to gather, indulge, dance, network and grow together. Through the vision of owner, Le’Qoinne Rice, we strive to bring you an innovative dining experience no matter where you come from. So, pull up a seat at our table because we couldn’t have done this without you, Chicago.</h2>
+
+        </div>
+    </div>
+
+    <div class="foodcontent">
+        <img class="foodimg" src="IMAGES/david.jpg">
+        <div class="foodtext">
+          <h1> Meet our Head Chef David Rodriguez </h1>
+          <h2 style="color: #2B2E28; font-size: 22px"> Born in Mexico, David immigrated to Chicago when he was 2 years old. He spent the early years of his life working at his father’s restaurant in Roscoe Village. It was in that kitchen where he learned how to cook on the line, keep up with the hustle + bustle of the food industry, and where he fell in love with different styles of cooking.<br><br> David will work closely with our featured chefs in operating the kitchen to ensure a successful new menu launch. Sound like something you want to be a part of?
+ </h2>
+        <a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9"> Apply to be a featured chef! </a>
+        </div>
+    </div>
+
+    <div class="aboutext">
+      <h1 style="color: #706C4C"> Press </h1>
+      <h2>
+        <a href="https://wgntv.com/morning-news/chicago-scene/the-duplex-in-logan-square-with-its-rotating-schedule-gives-aspiring-chefs-a-chance-to-show-their-stuff-and-diners-a-chance-to-enjoy-it/">WGNTV - The Duplex in Logan Square, with its rotating schedule, Gives Aspiring Chefs A Chance To Show Their Stuff</a><br>
+        <br>
+        <a href="https://blockclubchicago.org/2021/05/14/the-duplex-a-rotating-menu-restaurant-with-food-from-budding-chicago-chefs-to-open-in-heart-of-logan-square/">Block Club Chicago - The Duplex A Rotating Menu Restaurant</a><br>
+        <br>
+        <a href="https://www.chicagofoodmagazine.com/news/the-duplex-adds-two-new-concepts-to-rotating-menu-program">Chicago Food Magazine - The Duplex Adds Two New Concepts </a><br>
+        <br>
+        <a href="https://www.chicagomag.com/chicago-magazine/october-2021/the-10-hottest-restaurants-in-chicago-right-now-8/">Chicago Mag - The 10 Hottest Restaurants in Chicago Right Now</a>
+        <br>
+        <a href="https://www.theinfatuation.com/chicago/reviews/the-duplex-1">Infatuation - 17 New Brunches To Try In Chicago</a><br>
+        <br>
+        <a href="https://chicago.eater.com/maps/best-new-chicago-brunch-restaurants-2">Chicago Eater - Where To Eat Brunch Right Now</a><br>
+        <br>
+        <a href="https://www.thrillist.com/eat/chicago/chicago-restaurant-openings">Thrillist - 21 Chicago Recent and Upcoming Restaurant Openings to Get Excited About</a><br>
+        </h2>
+    </div>
+
+    <section class="footer" id="contact">
+      <div class="footerinfo">
+        <img src="IMAGES/Duplexlogoblack.png" class="footerlogo" />
+        <div class="footertext">
+          <div class="sitemap footersection">
+            <h1>Sitemap</h1>
+            <a href="menus.html"><p>Menu</p></a>
+            <a href="about.html"><p>About</p></a>
+            <p><a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9">Chef Collab</p></a>
+            <a href="https://www.exploretock.com/theduplex/"><p>Reservations</p></a>
+            <a href="specials.html"><p>Specials</p></a>
+          </div>
+          <div class="locationhours footersection">
+            <h1>Location</h1>
+            <div>3137 W Logan Blvd. Chicago, IL 60647</div>
+            <h1>Hours</h1>
+            <div> Monday - Closed </div>
+            <div>Tuesday - Thursday 5pm to 1 am</div>
+            <div>Friday - 5pm to 1 am</div>
+            <div>Saturday - 10am to 1 am</div>
+            <div>Sunday - 10am - 3 pm</div>
+
+          </div>
+          <div class="contact footersection">
+            <h1>Contact</h1>
+            <div>For general inquiries or opportunities: marketing@theduplexchicago.com</div><br>
+            <div>Interested in being a featured chef with us? <a href="https://ut9gohvbnv9.typeform.com/to/oxnePzj9">Click here for our chef application!</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="tenantscontainer">
+        <div class="tenants">
+          <h1>Our Tenants</h1>
+          <a href="https://www.2koreangirls.com/"><p>2KoreanGirls</p></a>
+          <a href="https://www.instagram.com/spacecowchi/"><p>Space Cow</p></a>
+        </div>
+      </div>
+    </section>
+      <div class="button_list">
+        <a href="https://www.exploretock.com/theduplex/" class="button_style" font-style="normal">Reserve</a>
+        <a href="https://www.toasttab.com/the-duplex/" class="button_style" font-style="normal">Order Now</a>
+      </div>
+          <footer class="stickyfooter">
+    </footer>
+  </div>
+</body>
+</html>
