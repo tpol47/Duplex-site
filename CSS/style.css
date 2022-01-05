@@ -1274,9 +1274,9 @@ u {
 
 @media (max-width: 768px) {
   .module1 {
-    width: 91%;
+    width: 92%;
   }
   .module1 .content {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
