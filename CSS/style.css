@@ -399,7 +399,7 @@ h4 {
 @media (min-width: 768px) {
   .foodcontent {
     /* display: flex; */
-    margin-top: 10%;
+    margin-top: 0%;
     margin-bottom: 10%;
     margin-left: 2%;
     margin-right: 3%;
@@ -429,7 +429,7 @@ h4 {
 @media (min-width: 768px) {
   .foodcontent2 {
     /* display: flex; */
-    margin-top: 10%;
+    margin-top: 0%;
     margin-bottom: 10%;
     margin-left: 2%;
     margin-right: 3%;
@@ -1219,4 +1219,64 @@ body {
 
 .latenightpic {
   max-width: 100%;
+}
+
+/* Pop Up Box Safety */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 18px;
+  background: #fff;
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  z-index: 5;
+}
+.popup .close {
+  position: absolute;
+  top: 6px;
+  bottom: 5px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 42px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: scroll;
+  font-size: 20px;
+  font-family: Alegreya Sans;
+  padding-top: 42px;
+}
+
+u {
+  text-decoration-color:#F2B277;
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 91%;
+  }
+  .popup .content {
+    font-size: 17px;
+  }
 }
