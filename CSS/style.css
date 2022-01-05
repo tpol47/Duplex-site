@@ -1238,7 +1238,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
-.popup {
+.module1 {
   margin: 70px auto;
   padding: 18px;
   background: #fff;
@@ -1248,7 +1248,7 @@ body {
   transition: all 2s ease-in-out;
   z-index: 5;
 }
-.popup .close {
+.module1 .close {
   position: absolute;
   top: 6px;
   bottom: 5px;
@@ -1259,7 +1259,7 @@ body {
   text-decoration: none;
   color: #333;
 }
-.popup .content {
+.module1 .content {
   max-height: 30%;
   overflow: scroll;
   font-size: 20px;
@@ -1273,10 +1273,10 @@ u {
 }
 
 @media (max-width: 768px) {
-  .popup {
+  .module1 {
     width: 91%;
   }
-  .popup .content {
+  .module1 .content {
     font-size: 17px;
   }
 }
